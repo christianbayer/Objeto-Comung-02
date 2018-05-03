@@ -1,0 +1,693 @@
+/***************
+ *    RESET    *
+ ***************/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, b, u, i, ol, ul, li, form, label, table, caption,
+tbody, tfoot, thead, tr, th, td, aside, figure, figcaption, footer, header, nav, section, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***************
+ *    FONTS    *
+ ***************/
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Roboto'), local('Roboto'), url("../fonts/Roboto/Roboto-Thin.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto'), local('Roboto'), url("../fonts/Roboto/Roboto-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto'), url("../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto'), local('Roboto'), url("../fonts/Roboto/Roboto-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto'), local('Roboto'), url("../fonts/Roboto/Roboto-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto'), local('Roboto'), url("../fonts/Roboto/Roboto-Black.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans'), local('Open-Sans'), url("../fonts/Open-Sans/OpenSans-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('Open-Sans'), url("../fonts/Open-Sans/OpenSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans'), local('Open-Sans'), url("../fonts/Open-Sans/OpenSans-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans'), local('Open-Sans'), url("../fonts/Open-Sans/OpenSans-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Open Sans'), local('Open-Sans'), url("../fonts/Open-Sans/OpenSans-ExtraBold.ttf") format('truetype');
+}
+
+/***************
+ *    BASIC    *
+ ***************/
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #1b1f38;
+    background-image: radial-gradient(circle at bottom right, #44133f, #1b1f38 80%, #15172c 150%);
+}
+
+aside {
+    width: 11em;
+    background: #15172c;
+    height: 100vh;
+    position: fixed;
+    -webkit-box-shadow: 5px 0 30px 0 #000;
+    -moz-box-shadow: 5px 0 30px 0 #000;
+    box-shadow: 5px 0 30px 0 #000;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 800;
+}
+
+section {
+    display: flex;
+    vertical-align: middle;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    padding-left: 11em;
+}
+
+/**************
+ *    TABS    *
+ **************/
+.tabs {
+    display: inline-block;
+    margin: auto 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.tabs-container {
+    display: flex;
+    height: 100%;
+}
+
+.tab {
+    width: 11em;
+    height: 10em;
+    line-height: 10em;
+    display: block;
+    text-align: center;
+}
+
+.tab a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.tab a span {
+    display: none;
+    line-height: 1.5;
+    width: 36rem;
+    font-size: 2rem;
+    margin-left: .4em;
+    margin-top: -.8rem;
+}
+
+.tab a i {
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.tab:hover {
+    width: 50rem;
+    -webkit-box-shadow: 0 0 50px 0 #000;
+    -moz-box-shadow: 0 0 50px 0 #000;
+    box-shadow: 0 0 50px 0 #000;
+}
+
+.tab:hover a {
+    text-align: left;
+}
+
+.tab:hover span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tab:nth-of-type(1) {
+    border-left: 1em solid #44133f;
+}
+
+.tab:nth-of-type(1).active,
+.tab:nth-of-type(1):hover {
+    background-color: #44133f;
+    border-color: #15172c;
+}
+
+.tabcontent {
+    margin: auto;
+    width: 50%;
+}
+
+.tabcontent p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 1em 0;
+}
+
+.tabcontent h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3em;
+    padding-bottom: .2em;
+    margin: 0 0 2rem 0;
+}
+
+#two,
+#three,
+#four {
+    display: none;
+}
+
+#one h3 {
+    border-bottom: 4px solid #44133f;
+}
+
+#two h3 {
+    border-bottom: 4px solid #84135b;
+}
+
+#three h3 {
+    border-bottom: 4px solid #c5317a;
+}
+
+#four h3 {
+    border-bottom: 4px solid #fa3352;
+}
+
+.tab:nth-of-type(2) {
+    border-left: 1em solid #84135b;
+}
+
+.tab:nth-of-type(2).active,
+.tab:nth-of-type(2):hover {
+    background-color: #84135b;
+    border-color: #15172c;
+}
+
+.tab:nth-of-type(3) {
+    border-left: 1em solid #c5317a;
+}
+
+.tab:nth-of-type(3).active,
+.tab:nth-of-type(3):hover {
+    background-color: #c5317a;
+    border-color: #15172c;
+}
+
+.tab:nth-of-type(4) {
+    border-left: 1em solid #fa3352;
+}
+
+.tab:nth-of-type(4).active,
+.tab:nth-of-type(4):hover {
+    background-color: #fa3352;
+    border-color: #15172c;
+}
+
+/****************
+ *    PLAYER    *
+ ****************/
+#audio-player {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#audio-controls {
+    padding: .6em 0;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+#audio-buttons {
+    display: inline-block;
+    vertical-align: middle;
+    height: 3.6em;
+    border-right: 1px solid rgba(255, 255, 255, .5);
+}
+
+#pause,
+#play {
+    font-size: 3em;
+    line-height: 1;
+    color: #fff;
+}
+
+#player-seek {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+    width: 68%;
+}
+
+#player-info {
+    font-weight: 500;
+    padding: 1em;
+}
+
+#player-info p {
+    font-size: .9em;
+    margin: .2em;
+}
+
+progress {
+    -webkit-appearance: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: 1em;
+    width: 100%;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    display: block;
+}
+
+progress::-webkit-progress-bar {
+    -webkit-appearance: none;
+    background: #fff;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+progress::-moz-progress-bar {
+    background: #fa3352;
+}
+
+progress::-webkit-progress-value {
+    -webkit-appearance: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: #fa3352;
+    -webkit-animation: move 5s linear 0;
+}
+
+.thumbnail {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: 0;
+}
+
+.thumbnail img {
+    max-width: 100%;
+}
+
+.thumbnail a {
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.thumbnail a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: #fff;
+}
+
+.content {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content p:first-of-type {
+    margin-top: 0;
+}
+
+.media {
+    display: inline-block;
+    width: 39%;
+    padding: 0 0 0 1em;
+}
+
+@media only screen and (max-width: 1600px) {
+    .tabcontent {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .tabcontent {
+        width: 70%;
+    }
+
+    .tabcontent h3 {
+        font-size: 2.6em;
+    }
+
+    .tab {
+        width: 10em;
+        height: 9em;
+        line-height: 9em;
+    }
+
+    .tab a {
+        font-size: 3rem;
+    }
+
+    .tab a i {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .tab a span {
+        font-size: 1.8rem;
+    }
+
+    .tab:hover {
+        width: 48rem;
+    }
+
+    aside {
+        width: 10em;
+    }
+
+    section {
+        padding-left: 10em;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .tabcontent {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .tabcontent {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .tabcontent h3 {
+        font-size: 2.2em;
+    }
+
+    .tabcontent p {
+        font-size: 15px;
+    }
+
+    .tab {
+        width: 9em;
+        height: 8em;
+        line-height: 8em;
+    }
+
+    .tab a {
+        font-size: 2.6rem;
+    }
+
+    .tab a i {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .tab a span {
+        font-size: 1.6rem;
+    }
+
+    .tab:hover {
+        width: 46rem;
+    }
+
+    aside {
+        width: 9em;
+    }
+
+    section {
+        padding-left: 9em;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    #player-seek {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .tab {
+        width: 6.6em;
+        height: 6em;
+        line-height: 6em;
+    }
+
+    .tab a {
+        font-size: 2rem;
+    }
+
+    .tab a i {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .tab a span {
+        font-size: 1.4rem;
+        width: 22rem;
+    }
+
+    .tab:hover {
+        width: 30rem;
+    }
+
+    aside {
+        width: 6.6em;
+    }
+
+    section {
+        padding-left: 6.6em;
+    }
+
+    .tab:nth-of-type(1),
+    .tab:nth-of-type(2),
+    .tab:nth-of-type(3),
+    .tab:nth-of-type(4) {
+        border-width: .6em;
+    }
+
+    .tabcontent h3 {
+        font-size: 1.8em;
+    }
+
+    .tabcontent p {
+        font-size: 14px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .tabcontent {
+        margin: 2em auto;
+    }
+
+    .media {
+        width: 50%;
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .tab {
+        width: 5.6em;
+        height: 5em;
+        line-height: 5em;
+    }
+
+    .tab a {
+        font-size: 1.8rem;
+    }
+
+    .tab a i {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .tab a span {
+        font-size: 1.2rem;
+        width: 20rem;
+        line-height: 1.2;
+        margin-top: -.4rem;
+    }
+
+    .tab:hover {
+        width: 26rem;
+    }
+
+    .tabcontent {
+        margin: 1em auto;
+    }
+
+    .tabcontent h3 {
+        font-size: 1.6em;
+        margin-bottom: .6em;
+        border-bottom: 3px;
+    }
+
+    aside {
+        width: 5.6em;
+    }
+
+    section {
+        padding-left: 5.6em;
+    }
+
+    .tab:nth-of-type(1),
+    .tab:nth-of-type(2),
+    .tab:nth-of-type(3),
+    .tab:nth-of-type(4) {
+        border-width: .6em;
+    }
+
+    .media {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .tab {
+        width: 4.4em;
+        height: 4em;
+        line-height: 4em;
+    }
+
+    .tab a {
+        font-size: 1.6rem;
+    }
+
+    aside {
+        width: 4.4em;
+    }
+
+    section {
+        padding-left: 4.4em;
+    }
+
+    #one h3 {
+        border-bottom: 3px solid #44133f;
+    }
+
+    #two h3 {
+        border-bottom: 3px solid #84135b;
+    }
+
+    #three h3 {
+        border-bottom: 3px solid #c5317a;
+    }
+
+    #four h3 {
+        border-bottom: 3px solid #fa3352;
+    }
+
+    .media {
+        width: 90%;
+    }
+}
+

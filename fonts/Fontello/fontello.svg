@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="expand" unicode="&#xe800;" d="M396 305l59-59-188-188h150v-83h-292v292h83v-150l188 188m59 149l-59-59-188 188v-150h-83v292h292v-83h-150l188-188m149-149l188-188v150h83v-292h-292v83h150l-188 188 59 59m-59 149l188 188h-150v83h292v-292h-83v150l-188-188-59 59z" horiz-adv-x="1000" />
+
+<glyph glyph-name="book-open" unicode="&#xe801;" d="M875 642c-46 14-97 21-146 21-81 0-169-17-229-63-60 46-148 63-229 63-81 0-169-17-229-63v-610c0-11 10-21 21-21 4 0 6 2 10 2 56 27 137 46 198 46 81 0 169-17 229-63 56 36 158 63 229 63 69 0 140-13 198-44 4-2 6-2 11-2 10 0 20 10 20 21v608c-25 19-52 31-83 42m0-563c-46 15-96 21-146 21-71 0-173-27-229-62v479c56 35 158 62 229 62 50 0 100-6 146-21v-479z" horiz-adv-x="1000" />
+
+<glyph glyph-name="files" unicode="&#xe802;" d="M625 558h229l-229 230v-230m-292 292h334l250-250v-500a83 83 0 0 0-84-83h-500c-46 0-83 37-83 83v667a83 83 0 0 0 83 83m-166-167v-750h666v-83h-666a83 83 0 0 0-84 83v750h84z" horiz-adv-x="1000" />
+
+<glyph glyph-name="laptop" unicode="&#xe803;" d="M167 600h666v-417h-666m666-83a83 83 0 0 1 84 83v417c0 46-38 83-84 83h-666c-47 0-84-37-84-83v-417a83 83 0 0 1 84-83h-167v-83h1000v83h-167z" horiz-adv-x="1000" />
+
+<glyph glyph-name="pause" unicode="&#xe804;" d="M583 58h167v584h-167m-333-584h167v584h-167v-584z" horiz-adv-x="1000" />
+
+<glyph glyph-name="vector" unicode="&#xe805;" d="M83 767h250v-84h334v84h250v-250h-84v-334h84v-250h-250v84h-334v-84h-250v250h84v334h-84v250m584-250v83h-334v-83h-83v-334h83v-83h334v83h83v334h-83m-500 166v-83h83v83h-83m583 0v-83h83v83h-83m-583-583v-83h83v83h-83m583 0v-83h83v83h-83z" horiz-adv-x="1000" />
+
+<glyph glyph-name="play" unicode="&#xe806;" d="M333 636v-583l459 291-459 292z" horiz-adv-x="1000" />
+
+<glyph glyph-name="dashboard" unicode="&#xe807;" d="M542 725v-250h333v250m-333-750h333v417h-333m-417-417h333v250h-333m0 83h333v417h-333v-417z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
