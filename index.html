@@ -10,6 +10,7 @@
     <meta name="author" content="Christian Bayer"/>
     <title>Objeto de prendizagem: Eixo temático II</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/fontello.css">
 </head>
 <body>
@@ -17,19 +18,33 @@
     <aside>
         <div class="tabs-container">
             <ul class="tabs">
-                <li class="tab active"><a href="#one"><i
-                        class="icon-book-open"></i><span>Trabalho pedagógico na escola</span></a></li>
-                <li class="tab"><a href="#two"><i class="icon-files"></i><span>Ensino por competências e a Base Nacional Comum Curricular</span></a>
+                <li class="tab active">
+                    <a href="#zero"><i class="icon-home"></i><span>Início</span></a>
                 </li>
-                <li class="tab"><a href="#three"><i class="icon-dashboard"></i><span>Possibilidades metodológicas interdisciplinares</span></a>
+                <li class="tab">
+                    <a href="#one"><i class="icon-book-open"></i><span>Trabalho pedagógico na escola</span></a>
                 </li>
-                <li class="tab"><a href="#four"><i class="icon-laptop"></i><span>Tecnologias e suas possibilidades para a educação do século XXI</span></a>
+                <li class="tab">
+                    <a href="#two"><i class="icon-files"></i><span>Ensino por competências e a Base Nacional Comum Curricular</span></a>
+                </li>
+                <li class="tab">
+                    <a href="#three"><i
+                            class="icon-dashboard"></i><span>Possibilidades metodológicas interdisciplinares</span></a>
+                </li>
+                <li class="tab">
+                    <a href="#four"><i class="icon-laptop"></i><span>Tecnologias e suas possibilidades para a educação do século XXI</span></a>
                 </li>
             </ul>
         </div>
     </aside>
     <section>
+        <div id="zero" class="tabcontent">
+            <div class="background"></div>
+            <h2>Eixo 2</h2>
+            <h1>Síntese</h1>
+        </div>
         <div id="one" class="tabcontent">
+            <div class="background"></div>
             <h3><i class="icon-book-open"></i> Trabalho pedagógico na escola</h3>
             <p>O coordenador pedagógico tem papel imprescindível na organização coletiva do trabalho pedagógico da
                 escola. Nessa perspectiva, as possibilidades de transformar o contexto educacional podem emergir a
@@ -59,7 +74,8 @@
             <div class="media">
                 <div class="thumbnail">
                     <img src="images/thumb-infografico.jpg" alt="">
-                    <a href="files/infografico-competencias-gerais.jpg" target="_blank"><i class="icon-expand"></i></a>
+                    <a href="files/infografico-competencias-gerais.jpg" data-fancybox="tab2" target="_blank"><i
+                            class="icon-expand"></i></a>
                 </div>
                 <div id="audio-player">
                     <div id="audio-controls">
@@ -81,6 +97,7 @@
             </div>
         </div>
         <div id="three" class="tabcontent">
+            <div class="background"></div>
             <h3><i class="icon-dashboard"></i> Possibilidades metodológicas interdisciplinares</h3>
             <p>A interdisciplinaridade possibilita a integração das disciplinas, podendo representar uma estratégia para
                 superar o ensino fragmentado, capaz de contribuir para a contextualização. A interdisciplinaridade
@@ -108,13 +125,20 @@
             <div class="media">
                 <div class="thumbnail">
                     <img src="images/thumb-artigo.jpg" alt="">
-                    <a href="files/artigo-tecnologia.pdf" target="_blank"><i class="icon-expand"></i></a>
+                    <a href="files/artigo-tecnologia.pdf" data-fancybox="tab4" target="_blank"><i
+                            class="icon-expand"></i></a>
                 </div>
             </div>
         </div>
     </section>
 </main>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script>
+    $.fancybox.defaults.buttons = [
+        "close"
+    ];
+</script>
 </body>
 </html>

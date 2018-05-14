@@ -215,19 +215,10 @@ section {
     vertical-align: middle;
 }
 
-.tab:nth-of-type(1) {
-    border-left: 1em solid #44133f;
-}
-
-.tab:nth-of-type(1).active,
-.tab:nth-of-type(1):hover {
-    background-color: #44133f;
-    border-color: #15172c;
-}
-
 .tabcontent {
     margin: auto;
     width: 50%;
+    padding: 3em 0;
 }
 
 .tabcontent p {
@@ -237,13 +228,67 @@ section {
     margin: 1em 0;
 }
 
+.tabcontent h1,
+.tabcontent h2,
 .tabcontent h3 {
     font-family: "Roboto", sans-serif;
-    font-size: 3em;
     padding-bottom: .2em;
+}
+
+.tabcontent h3 {
+    font-size: 3em;
     margin: 0 0 2rem 0;
 }
 
+.tabcontent h2 {
+    font-size: 4em;
+    margin: 0 0 2rem 0;
+    /*font-weight: 400;*/
+}
+
+.tabcontent h1 {
+    font-size: 6em;
+    margin: 0;
+    font-weight: 400;
+}
+
+#zero {
+    text-align: center;
+}
+
+#zero .background {
+    background-image: url("../images/zero-background.jpg");
+    -ms-background-position-y: bottom;
+    background-position-y: bottom;
+}
+
+#one .background {
+    background-image: url("../images/one-background.jpg");
+    -ms-background-position-y: center;
+    background-position-y: center;
+}
+
+#three .background {
+    background-image: url("../images/three-background.jpg");
+    -ms-background-position-y: center;
+    background-position-y: center;
+}
+
+.background {
+    -ms-background-position-x: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+    opacity: .05;
+    position: absolute;
+    top: 0;
+    left: 11em;
+    right: 0;
+    bottom: 0;
+}
+
+#one,
 #two,
 #three,
 #four {
@@ -266,32 +311,52 @@ section {
     border-bottom: 4px solid #fa3352;
 }
 
+.tab:nth-of-type(1) {
+    border-left: 1em solid #240626;
+}
+
+.tab:nth-of-type(1).active,
+.tab:nth-of-type(1):hover {
+    background-color: #240626;
+    border-color: #15172c;
+}
+
 .tab:nth-of-type(2) {
-    border-left: 1em solid #84135b;
+    border-left: 1em solid #44133f;
 }
 
 .tab:nth-of-type(2).active,
 .tab:nth-of-type(2):hover {
-    background-color: #84135b;
+    background-color: #44133f;
     border-color: #15172c;
 }
 
 .tab:nth-of-type(3) {
-    border-left: 1em solid #c5317a;
+    border-left: 1em solid #84135b;
 }
 
 .tab:nth-of-type(3).active,
 .tab:nth-of-type(3):hover {
-    background-color: #c5317a;
+    background-color: #84135b;
     border-color: #15172c;
 }
 
 .tab:nth-of-type(4) {
-    border-left: 1em solid #fa3352;
+    border-left: 1em solid #c5317a;
 }
 
 .tab:nth-of-type(4).active,
 .tab:nth-of-type(4):hover {
+    background-color: #c5317a;
+    border-color: #15172c;
+}
+
+.tab:nth-of-type(5) {
+    border-left: 1em solid #fa3352;
+}
+
+.tab:nth-of-type(5).active,
+.tab:nth-of-type(5):hover {
     background-color: #fa3352;
     border-color: #15172c;
 }
@@ -439,6 +504,14 @@ progress::-webkit-progress-value {
         font-size: 2.6em;
     }
 
+    .tabcontent h2 {
+        font-size: 3.6rem;
+    }
+
+    .tabcontent h1 {
+        font-size: 5.4rem;
+    }
+
     .tab {
         width: 10em;
         height: 9em;
@@ -469,6 +542,10 @@ progress::-webkit-progress-value {
     section {
         padding-left: 10em;
     }
+
+    .background {
+        left: 10em;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -486,6 +563,14 @@ progress::-webkit-progress-value {
 @media only screen and (max-width: 1000px) {
     .tabcontent h3 {
         font-size: 2.2em;
+    }
+
+    .tabcontent h2 {
+        font-size: 3.2rem;
+    }
+
+    .tabcontent h1 {
+        font-size: 5rem;
     }
 
     .tabcontent p {
@@ -521,6 +606,10 @@ progress::-webkit-progress-value {
 
     section {
         padding-left: 9em;
+    }
+
+    .background {
+        left: 9em;
     }
 }
 
@@ -563,6 +652,10 @@ progress::-webkit-progress-value {
         padding-left: 6.6em;
     }
 
+    .background {
+        left: 6.6em;
+    }
+
     .tab:nth-of-type(1),
     .tab:nth-of-type(2),
     .tab:nth-of-type(3),
@@ -574,6 +667,14 @@ progress::-webkit-progress-value {
         font-size: 1.8em;
     }
 
+    .tabcontent h2 {
+        font-size: 2.6rem;
+    }
+
+    .tabcontent h1 {
+        font-size: 4rem;
+    }
+
     .tabcontent p {
         font-size: 14px;
     }
@@ -583,7 +684,7 @@ progress::-webkit-progress-value {
     }
 
     .tabcontent {
-        margin: 2em auto;
+        padding: 2em auto;
     }
 
     .media {
@@ -622,7 +723,7 @@ progress::-webkit-progress-value {
     }
 
     .tabcontent {
-        margin: 1em auto;
+        padding: 1em auto;
     }
 
     .tabcontent h3 {
@@ -631,12 +732,25 @@ progress::-webkit-progress-value {
         border-bottom: 3px;
     }
 
+    .tabcontent h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .tabcontent h1 {
+        font-size: 3.6rem;
+    }
+
     aside {
         width: 5.6em;
     }
 
     section {
         padding-left: 5.6em;
+    }
+
+    .background {
+        left: 5.6em;
     }
 
     .tab:nth-of-type(1),
@@ -668,6 +782,10 @@ progress::-webkit-progress-value {
 
     section {
         padding-left: 4.4em;
+    }
+
+    .background {
+        left: 4.4em;
     }
 
     #one h3 {

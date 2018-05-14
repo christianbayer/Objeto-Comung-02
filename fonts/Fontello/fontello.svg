@@ -21,6 +21,8 @@
 <glyph glyph-name="play" unicode="&#xe806;" d="M333 636v-583l459 291-459 292z" horiz-adv-x="1000" />
 
 <glyph glyph-name="dashboard" unicode="&#xe807;" d="M542 725v-250h333v250m-333-750h333v417h-333m-417-417h333v250h-333m0 83h333v417h-333v-417z" horiz-adv-x="1000" />
+
+<glyph glyph-name="home" unicode="&#xe808;" d="M417 17v250h166v-250h209v333h125l-417 375-417-375h125v-333h209z" horiz-adv-x="1000" />
 </font>
 </defs>
 </svg>
