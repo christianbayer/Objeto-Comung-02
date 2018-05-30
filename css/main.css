@@ -228,7 +228,6 @@ section {
     margin: 1em 0;
 }
 
-.tabcontent h1,
 .tabcontent h2,
 .tabcontent h3 {
     font-family: "Roboto", sans-serif;
@@ -236,20 +235,21 @@ section {
 }
 
 .tabcontent h3 {
-    font-size: 3em;
+    font-size: 3.2em;
     margin: 0 0 2rem 0;
 }
 
 .tabcontent h2 {
-    font-size: 4em;
+    font-size: 3.2em;
     margin: 0 0 2rem 0;
-    /*font-weight: 400;*/
+    font-weight: 300;
+    line-height: 1.2;
 }
 
 .tabcontent h1 {
-    font-size: 6em;
+    padding-bottom: 1em;
+    font-size: 4.6em;
     margin: 0;
-    font-weight: 400;
 }
 
 #zero {
@@ -280,7 +280,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -5;
-    opacity: .05;
+    opacity: .1;
     position: absolute;
     top: 0;
     left: 11em;
@@ -493,24 +493,6 @@ progress::-webkit-progress-value {
     .tabcontent {
         width: 60%;
     }
-}
-
-@media only screen and (max-width: 1400px) {
-    .tabcontent {
-        width: 70%;
-    }
-
-    .tabcontent h3 {
-        font-size: 2.6em;
-    }
-
-    .tabcontent h2 {
-        font-size: 3.6rem;
-    }
-
-    .tabcontent h1 {
-        font-size: 5.4rem;
-    }
 
     .tab {
         width: 10em;
@@ -548,33 +530,21 @@ progress::-webkit-progress-value {
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
     .tabcontent {
-        width: 80%;
+        width: 70%;
     }
-}
 
-@media only screen and (max-width: 1100px) {
-    .tabcontent {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
     .tabcontent h3 {
-        font-size: 2.2em;
+        font-size: 2.6em;
     }
 
     .tabcontent h2 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .tabcontent h1 {
-        font-size: 5rem;
-    }
-
-    .tabcontent p {
-        font-size: 15px;
+        font-size: 4.4rem;
     }
 
     .tab {
@@ -584,7 +554,7 @@ progress::-webkit-progress-value {
     }
 
     .tab a {
-        font-size: 2.6rem;
+        font-size: 2.8rem;
     }
 
     .tab a i {
@@ -610,6 +580,71 @@ progress::-webkit-progress-value {
 
     .background {
         left: 9em;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .tabcontent {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .tabcontent {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .tabcontent h3 {
+        font-size: 2.2em;
+    }
+
+    .tabcontent h2 {
+        font-size: 2.6rem;
+    }
+
+    .tabcontent h1 {
+        font-size: 4rem;
+    }
+
+    .tabcontent p {
+        font-size: 15px;
+    }
+
+    .tab {
+        width: 7em;
+        height: 6em;
+        line-height: 6em;
+    }
+
+    .tab a {
+        font-size: 2.2rem;
+    }
+
+    .tab a i {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .tab a span {
+        font-size: 1.4rem;
+    }
+
+    .tab:hover {
+        width: 44rem;
+    }
+
+    aside {
+        width: 7em;
+    }
+
+    section {
+        padding-left: 7em;
+    }
+
+    .background {
+        left: 7em;
     }
 }
 
@@ -659,7 +694,8 @@ progress::-webkit-progress-value {
     .tab:nth-of-type(1),
     .tab:nth-of-type(2),
     .tab:nth-of-type(3),
-    .tab:nth-of-type(4) {
+    .tab:nth-of-type(4),
+    .tab:nth-of-type(5) {
         border-width: .6em;
     }
 
@@ -668,11 +704,11 @@ progress::-webkit-progress-value {
     }
 
     .tabcontent h2 {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
     }
 
     .tabcontent h1 {
-        font-size: 4rem;
+        font-size: 3.4rem;
     }
 
     .tabcontent p {
@@ -733,12 +769,12 @@ progress::-webkit-progress-value {
     }
 
     .tabcontent h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
     }
 
     .tabcontent h1 {
-        font-size: 3.6rem;
+        font-size: 3rem;
     }
 
     aside {
@@ -751,13 +787,6 @@ progress::-webkit-progress-value {
 
     .background {
         left: 5.6em;
-    }
-
-    .tab:nth-of-type(1),
-    .tab:nth-of-type(2),
-    .tab:nth-of-type(3),
-    .tab:nth-of-type(4) {
-        border-width: .6em;
     }
 
     .media {
